@@ -11,5 +11,6 @@ spec:
           containers:
           - name: cron-nautilus
             image: nginx:latest
-            command: ["echo", "Welcome to xfusioncorp!"]
+            command: ["/bin/sh"]
+            args: ["-c", "echo Welcome to xfusioncorp!"]
           restartPolicy: OnFailure
